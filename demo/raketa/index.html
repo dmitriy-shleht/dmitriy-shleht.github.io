@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <title>Ракета</title>
+    <title>Rocket</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -16,6 +16,7 @@
 
 <body>
 <div class="wrapper">
+    <div class="bg"></div>
     <nav class="menu">
         <ul>
             <li><a href="#start">Поехали</a></li>
@@ -24,7 +25,8 @@
         </ul>
     </nav>
 
-    <section id="start" class="grid">
+    <section id="start" class="grid grid--center grid--nested">
+        <div class="planeta_top"></div>
         <div class="grid-cell vertical-center">
             <div class="contacts">
                 <h2>Поехали</h2>
@@ -32,38 +34,18 @@
                 <address>Hello@roob.in</address>
             </div>
         </div>
-        <div class="grid-cell vertical-center">
-            <div class="row">
-                <form class="form-horizontal" role="form">
-                    <div class="col-md-offset-1 col-md-10">
-                        <h3>Скачайте план построения <br> своего идеального интернет магазина</h3>
-                    </div>
+        <div class="form_wrap grid-cell">
+            <form id="form">
+                <h3>Скачайте план построения своего идеального интернет магазина</h3>
+                <input class="form_input" type="text" name="name" placeholder="Ваше Имя" required>
+                <input class="form_input" type="text" name="email" placeholder="Ваш e-mail" required>
 
-                    <div class="form-group">
-                        <!--<label for="inputPassword3" class="col-sm-2 control-label">Пароль</label>-->
-                        <div class="col-md-offset-2 col-md-8">
-                            <input type="name" class="form-control" id="inputName" placeholder="Password">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <!--<label for="inputEmail3" class="col-sm-2 control-label">Email</label>-->
-                        <div class="col-md-offset-2 col-md-8">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-8">
-                            <button type="submit" class="btn btn-default">Скачать</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                <button class="btn" type="submit" value="Отправить сообщение">Скачать</button>
+            </form>
         </div>
     </section>
-
-    <section id="destination" class="grid grid--1of3 grid--nested">
+    <div class="tuman"></div>
+    <section id="destination" class="grid grid--center grid--1of3 grid--nested">
         <div class="grid-cell vertical-center">
             <div class="point">
                 <h2>Пункт назначения:</h2>
@@ -72,9 +54,12 @@
             </div>
         </div>
         <div class="grid-cell vertical-center">
-            <div class="grid grid--nested vertical-center">
+            <div class="grid grid--nested grid--center vertical-center">
                 <div class="block_plan grid-cell">
-                    <div class="arka"></div>
+                    <div class="arka">
+                        <img src="../images/moon.png" alt="moon">
+                    </div>
+
                     <div class="text">
                         <h3>луна</h3>
                         <p>
@@ -84,7 +69,10 @@
                     <a href="#" class="btn">хочу сюда</a>
                 </div>
                 <div class="block_plan grid-cell">
-                    <div class="arka"></div>
+                    <div class="arka">
+                        <img src="../images/mars.png" alt="moon">
+                    </div>
+
                     <div class="text">
                         <h3>МАРС</h3>
                         <p>
@@ -94,13 +82,16 @@
                     <a href="#" class="btn">хочу сюда</a>
                 </div>
                 <div class="block_plan grid-cell">
-                    <div class="arka"></div>
+                    <div class="arka">
+                        <img src="../images/jupiter.png" alt="moon">
+                    </div>
+
                     <div class="text">
                         <h3>юпитер</h3>
                         <p>
-                            дашборды </br>
-                            сквозная аналитика</br>
-                            произвольные бизнес-процессы</br>
+                            дашборды <br/>
+                            сквозная аналитика<br/>
+                            произвольные бизнес-процессы<br/>
                             что-то, ато не красиво
                         </p>
                     </div>
@@ -110,7 +101,7 @@
         </div>
     </section>
 
-    <section id="start_point" class="grid grid--1of3 grid--nested">
+    <section id="start_point" class="grid grid--center grid--1of3 grid--nested">
         <div class="grid-cell vertical-center">
             <div class="point">
                 <h2>Точка старта:</h2>
@@ -120,23 +111,48 @@
         </div>
 
         <div class="grid-cell vertical-center">
-            <div class="grid grid--nested vertical-center">
+            <div class="grid grid--nested grid--center vertical-center">
                 <div class="tool grid-cell">
                     <ul>
                         <li>
                             <input type="checkbox" name="tool"> Сайт
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                         <li>
                             <input type="checkbox" name="tool"> Учетная система
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                         <li>
                             <input type="checkbox" name="tool"> CRM
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                         <li>
                             <input type="checkbox" name="tool"> Интеграция сайт – уч. система
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                         <li>
                             <input type="checkbox" name="tool"> Интеграция сайт – CRM
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -144,26 +160,52 @@
                     <ul>
                         <li>
                             <input type="checkbox" name="tool1"> Телефония
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                         <li>
                             <input type="checkbox" name="tool1"> Автовронки
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                         <li>
                             <input type="checkbox" name="tool1"> Бизнес-процессы
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                         <li>
                             <input type="checkbox" name="tool1"> Сквозная аналитика
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                         <li>
                             <input type="checkbox" name="tool1"> Рекламные рассылки
+                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
+                                                           На него заходят люди и читают про Вашу компанию.
+                                                           У нас есть сайт. А у Вас?">
+                                <img src="../images/question.png" alt="help">
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <div class="slide-sputnik"></div>
     </section>
 
-    <header class="grid header vertical-center">
+    <header class="grid header grid--center vertical-center">
         <div>
             <a href="#start_point" class="btn_arrow">
                 <img src="../images/mouse_arrow.gif" alt="Arrow up">
@@ -179,8 +221,12 @@
         </div>
     </header>
 
-    <div class="rocket">
-        <canvas id="rocket-canvas" width="211" height="974"></canvas>
+    <div id="racket">
+        <div class="fire">
+            <div id="fireFront" class="fire-front"></div>
+            <div id="fireMid" class="fire-mid"></div>
+            <div id="fireBack" class="fire-back"></div>
+        </div>
     </div>
 </div>
 
