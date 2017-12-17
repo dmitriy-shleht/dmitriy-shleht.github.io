@@ -17,9 +17,6 @@
         display: inline-block;
         vertical-align: middle;
     }
-    .header__item {
-        bottom: 0;
-    }
     .planet {
         margin-top: -256px;
     }
@@ -28,9 +25,6 @@
 @media (max-width: 1127px) and (min-width: 340px) {
     aside.wrapper__item {
         display: none;
-    }
-    .header__item {
-        bottom: 0;
     }
     .sputnik {
         display: none;
@@ -57,5 +51,14 @@
     }
     .planet {
         width: 1000px;
+    }
+}
+
+@media (max-height: 690px) and (min-height: 550px) {
+    .header__title {
+        padding: 0;
+    }
+    .header__item {
+        bottom: 30px;
     }
 }
