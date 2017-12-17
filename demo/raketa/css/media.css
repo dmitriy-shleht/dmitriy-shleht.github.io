@@ -1,0 +1,61 @@
+@media (max-width: 1400px) and (min-width: 340px) {
+    .form-wrap,
+    .plan,
+    .tool {
+        display: block;
+        width: 100%;
+        margin: 30px auto 0;
+    }
+    .start .text,
+    .start-point .text,
+    .destination .text {
+        text-align: center;
+        width: 90%;
+    }
+    .tool__item {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .header__item {
+        bottom: 0;
+    }
+    .planet {
+        margin-top: -256px;
+    }
+}
+
+@media (max-width: 1127px) and (min-width: 340px) {
+    aside.wrapper__item {
+        display: none;
+    }
+    .header__item {
+        bottom: 0;
+    }
+    .sputnik {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) and (min-width: 340px) {
+    .plan__item,
+    .tool__item {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .start,
+    .destination,
+    .start-point {
+        margin: 100px auto;
+    }
+    .form_input {
+        width: calc(92% - 20px);
+    }
+    #form h3 {
+        font-size: 2rem;
+    }
+    .planet {
+        width: 1000px;
+    }
+}

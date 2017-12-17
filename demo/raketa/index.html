@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <title>Rocket</title>
@@ -10,225 +10,252 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/paralax.css">
+    <link rel="stylesheet" href="css/racket.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/scroll.css">
 </head>
 
-<body>
-<div class="wrapper">
-    <div class="bg"></div>
-    <section id="start" class="grid grid--center grid--nested">
-        <div class="planeta_top"></div>
-        <div class="grid-cell vertical-center">
-            <div class="contacts">
-                <h2>Поехали</h2>
-                <address>8 800 505 13 98</address>
-                <address>Hello@roob.in</address>
-            </div>
-        </div>
-        <div class="form_wrap grid-cell">
-            <form id="form">
-                <h3>Скачайте план построения своего идеального интернет магазина</h3>
-                <input class="form_input" type="text" name="name" placeholder="Ваше Имя" required>
-                <input class="form_input" type="text" name="email" placeholder="Ваш e-mail" required>
-
-                <button class="btn" type="submit" value="Отправить сообщение">Скачать</button>
-            </form>
-        </div>
-    </section>
-    <div class="tuman"></div>
-    <section id="destination" class="grid grid--center grid--1of3 grid--nested">
-        <div class="grid-cell vertical-center">
-            <div class="point">
-                <h2>Пункт назначения:</h2>
-                <p>Чтобы понять, куда вам надо попасть, надо определить, где вы находитесь. Отметьте инструменты,
-                    которыми вы уже пользуетесь.</p>
-            </div>
-        </div>
-        <div class="grid-cell vertical-center">
-            <div class="grid grid--nested grid--center vertical-center">
-                <div class="block_plan grid-cell">
-                    <div class="arka">
-                        <img src="../images/moon.png" alt="moon">
-                    </div>
-
-                    <div class="text">
-                        <h3>луна</h3>
-                        <p>
-                            росто какой-то текст, в дальнейшем измененный по теме.
-                        </p>
-                    </div>
-                    <a href="#" class="btn">хочу сюда</a>
-                </div>
-                <div class="block_plan grid-cell">
-                    <div class="arka">
-                        <img src="../images/mars.png" alt="moon">
-                    </div>
-
-                    <div class="text">
-                        <h3>МАРС</h3>
-                        <p>
-                            росто какой-то текст, в дальнейшем измененный по теме.
-                        </p>
-                    </div>
-                    <a href="#" class="btn">хочу сюда</a>
-                </div>
-                <div class="block_plan grid-cell">
-                    <div class="arka">
-                        <img src="../images/jupiter.png" alt="moon">
-                    </div>
-
-                    <div class="text">
-                        <h3>юпитер</h3>
-                        <p>
-                            дашборды <br/>
-                            сквозная аналитика<br/>
-                            произвольные бизнес-процессы<br/>
-                            что-то, ато не красиво
-                        </p>
-                    </div>
-                    <a href="#" class="btn">хочу сюда</a>
+<body data-paroller-factor="-0.2">
+    <div class="wrapper">
+        <aside class="wrapper__item">
+            <div id="racket">
+                <div class="fire">
+                    <div id="fireFront" class="fire-front"></div>
+                    <div id="fireMid" class="fire-mid"></div>
+                    <div id="fireBack" class="fire-back"></div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="start_point" class="grid grid--center grid--1of3 grid--nested">
-        <div class="grid-cell vertical-center">
-            <div class="point">
-                <h2>Точка старта:</h2>
-                <p>Чтобы понять, куда вам надо попасть, надо определить, где вы находитесь. Отметьте инструменты,
-                    которыми вы уже пользуетесь.</p>
-            </div>
-        </div>
-
-        <div class="grid-cell vertical-center">
-            <div class="grid grid--nested grid--center vertical-center">
-                <div class="tool grid-cell">
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="tool"> Сайт
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="tool"> Учетная система
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="tool"> CRM
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="tool"> Интеграция сайт – уч. система
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="tool"> Интеграция сайт – CRM
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                    </ul>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#start">Поехали</a></li>
+                    <li><a href="#destination">Пункт назначения</a></li>
+                    <li><a href="#start-point">Точка старта</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="wrapper__item">
+            <section id="start" class="start">
+                <div class="start__item text">
+                    <h2>Поехали</h2>
+                    <address>8 800 505 13 98</address>
+                    <address>Hello@roob.in</address>
                 </div>
-                <div class="tool grid-cell">
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="tool1"> Телефония
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="tool1"> Автовронки
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="tool1"> Бизнес-процессы
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="tool1"> Сквозная аналитика
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="tool1"> Рекламные рассылки
-                            <div class="photo" data-title="Сайт - это совокупность картинок и html кода.
-                                                           На него заходят люди и читают про Вашу компанию.
-                                                           У нас есть сайт. А у Вас?">
-                                <img src="../images/question.png" alt="help">
-                            </div>
-                        </li>
-                    </ul>
+                <div class="start__item form-wrap">
+                    <form id="form">
+                        <h3>Скачайте план построения своего идеального интернет магазина</h3>
+                        <input class="form_input" type="text" name="name" placeholder="Ваше Имя" required>
+                        <input class="form_input" type="text" name="email" placeholder="Ваш e-mail" required>
+
+                        <button class="btn" type="submit" value="Отправить сообщение">Скачать</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="destination" class="destination">
+                <div class="destination__item text">
+                    <h2>Пункт назначения:</h2>
+                    <p>
+                        Чтобы понять, куда вам надо попасть, надо определить, где вы находитесь. Отметьте инструменты, которыми вы уже пользуетесь.
+                    </p>
+                </div>
+                <div class="destination__item plan">
+                    <div class="plan__item">
+                        <div class="arka">
+                            <img src="img/moon.png" alt="moon">
+                        </div>
+
+                        <div class="description">
+                            <h3>луна</h3>
+                            <p>сайт</p>
+                            <p>учетная система</p>
+                            <p>телефония</p>
+                            <p>лид-коллектор</p>
+                        </div>
+                        <a href="#" class="btn">хочу сюда</a>
+                    </div>
+
+                    <div class="plan__item">
+                        <div class="arka">
+                            <img src="img/mars.png" alt="mars">
+                        </div>
+
+                        <div class="description">
+                            <h3>МАРС</h3>
+                            <p>CRM </p>
+                            <p>рассылки </p>
+                            <p>фвтоворонки</p>
+                            <p>типовые бизнес-просеццы</p>
+                        </div>
+                        <a href="#" class="btn">хочу сюда</a>
+                    </div>
+
+                    <div class="plan__item">
+                        <div class="arka">
+                            <img src="img/jupiter.png" alt="jupiter">
+                        </div>
+
+                        <div class="description">
+                            <h3>юпитер</h3>
+                            <p>дашборды</p>
+                            <p>сквозная аналитика</p>
+                            <p>произвольные бизнес-процессы</p>
+                            <p>что-то, ато не красиво</p>
+                        </div>
+                        <a href="#" class="btn">хочу сюда</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="start-point" class="start-point">
+
+                <div class="start-point__item text">
+                    <h2>Точка старта:</h2>
+                    <p>
+                        Чтобы понять, куда вам надо попасть, надо определить, где вы находитесь. Отметьте инструменты, которыми вы уже пользуетесь.
+                    </p>
+                </div>
+                <div class="start-point__item tool">
+                    <div class="tool__item">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="c" name="cc" />
+                                <label for="c"><span></span>Сайт</label>
+                                <div class="tooltip">
+
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c0" name="cc" />
+                                <label for="c0"><span></span>Учетная система</label>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c1" name="cc" />
+                                <label for="c1"><span></span>CRM</label>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c2" name="cc" />
+                                <label for="c2"><span></span>Интеграция сайт – уч. система</label>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c3" name="cc" />
+                                <label for="c3"><span></span>Интеграция сайт – CRM</label>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                                </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tool__item">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="c4" name="cc" />
+                                <label for="c4"><span></span>Телефония</label>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c5" name="cc" />
+                                <label for="c5"><span></span>Автовронки</label>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c6" name="cc" />
+                                <label for="c6"><span></span>Бизнес-процессы</label>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                            </span>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c7" name="cc" />
+                                <label for="c7"><span></span>Сквозная аналитика</label>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                            </span>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c8" name="cc" />
+                                <label for="c8"><span></span>Рекламные рассылки</label>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">
+                                    Сайт - это совокупность картинок и html кода. На него заходят люди и читают про Вашу компанию. У нас есть сайт. А у Вас?
+                                </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="background">
+            <div class="planet" data-paroller-factor="-0.2"></div>
+            <div class="tuman" data-paroller-factor="-0.1"></div>
+            <div class="sputnik"></div>
+            <div class="bg-header"></div>
+        </div>
+    </div>
+    <header class="header ">
+        <div class="header__item ">
+            <div class="header__scroll ">
+                <div class="mouse "></div>
+                <div class="arrows ">
+                    <span class="three "></span>
+                    <span class="two "></span>
+                    <span class="one "></span>
                 </div>
             </div>
-        </div>
-        <div class="slide-sputnik"></div>
-    </section>
-
-    <header class="grid header grid--center vertical-center">
-        <div>
-            <a href="#start_point" class="btn_arrow">
-                <img src="../images/mouse_arrow.gif" alt="">
-            </a>
-        </div>
-
-        <div class="header_title">
-            <h1>Проект Ракета</h1>
-            <div class="grid-cell">
-                <p>Комплексная система управления интернет-магазином. Хотите узнать, как работает идеальный интернет-магазин? Три простых шага и вы у цели. Поехали!</p>
+            <div class="header__title ">
+                <h1>Проект Ракета</h1>
+                <p>
+                    Комплексная система управления интернет-магазином. Хотите узнать, как работает идеальный интернет-магазин?<br> Три простых шага и вы у цели. Поехали!
+                </p>
             </div>
         </div>
     </header>
 
-    <div id="racket">
-        <div class="fire">
-            <div id="fireFront" class="fire-front"></div>
-            <div id="fireMid" class="fire-mid"></div>
-            <div id="fireBack" class="fire-back"></div>
-        </div>
-    </div>
-    <nav class="menu">
-        <ul>
-            <li><a href="#start">Поехали</a></li>
-            <li><a href="#destination">Пункт назначения</a></li>
-            <li><a href="#start_point">Точка старта</a></li>
-        </ul>
-    </nav>
-</div>
 
-<script src="js/main.js"></script>
+
+
+
+    <script src="js/jquery-3.2.1.min.js "></script>
+    <script src="js/jquery.paroller.min.js "></script>
+    <script src="js/rocket.js "></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>

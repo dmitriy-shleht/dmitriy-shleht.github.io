@@ -1,0 +1,76 @@
+/* #start_point, body {
+	position: relative;
+}
+.bg {
+	width: 100%;
+	height: 100%;
+	background: url("../images/bg.jpg") center / cover no-repeat;
+	position: absolute;
+	top: -7%;
+	right: 0%;
+}
+.planeta_top {
+	width: 90%;
+	height: 850px;
+	background: url(../images/planeta_top.png) 0 / cover no-repeat;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+}
+.tuman {
+	width: 100%;
+	height: 1229px;
+	background: url(../images/tuman.png) 0 0 no-repeat;
+	position: absolute;
+	top: 4%;
+	left: 0%;
+}
+.slide-sputnik {
+	width: 612px;
+	height: 306px;
+	background: url(../images/sputnik.png) 0 0 no-repeat;
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	background-size: contain;
+} */
+
+.background {
+    width: 100%;
+    height: 100%;
+}
+
+.planet {
+    background: url("../img/planeta_top.png") center / cover no-repeat;
+    height: 1086px;
+    width: 1500px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.tuman {
+    width: 100%;
+    height: 1229px;
+    background: url("../img/tuman.png") center / cover no-repeat;
+    position: absolute;
+    top: 4%;
+    left: 0%;
+}
+
+.sputnik {
+    width: 612px;
+    height: 306px;
+    background: url("../img/sputnik.png") center / cover no-repeat;
+    position: absolute;
+    top: 59%;
+    right: 10%;
+}
+
+.bg-header {
+    background: url("../img/bg_header.png") center / cover no-repeat;
+    height: 1134px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
