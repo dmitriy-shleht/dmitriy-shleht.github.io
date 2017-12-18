@@ -4,6 +4,9 @@ $(document).ready(function() {
     // половина выстоты экрана
     var half_height = $(window).height() / 2;
 
+    var scrollPos = 0,
+        racketOffset = 0;
+
     var onScroll = function() {
         toggleMenuStyle();
         var amountScrolled = $(document).scrollTop();
@@ -12,13 +15,28 @@ $(document).ready(function() {
             var currentHighlighted = $(this);
             var activeElement = $(currentHighlighted.attr("href"));
 
+
+            var theTop = $(window).scrollTop(),
+                theDocHeight = $(document).height(), //max размер страницы
+                theWinHeight = $(window).height(); // высота экрана
+            scrollPos = ((theTop / (theDocHeight - theWinHeight)) * 100) / 6.8;
+
             //if (activeElement.position().top <= amountScrolled && activeElement.position().top + (activeElement.outerHeight()) > amountScrolled) {
             if ($(document).scrollTop() + half_height > activeElement.offset().top && $(document).scrollTop() - activeElement.offset().top < activeElement.outerHeight()) {
                 $(".menu a").removeClass("active");
                 currentHighlighted.addClass("active");
+                //punktMenu = currentHighlighted.position().top;
             } else {
                 currentHighlighted.removeClass("active");
             }
+        });
+
+        // смещение ракеты
+        if (racketOffset === 0) {
+            racketOffset = 59 - scrollPos;
+        }
+        $("#racket").css({
+            top: scrollPos + racketOffset + '%'
         });
 
         parallaxScroll();
@@ -44,7 +62,6 @@ $(document).ready(function() {
 
     $(".menu a").on("click", function(e) {
         e.preventDefault();
-        //$(document).off("scroll");
 
         $(".menu a").each(function() {
             $(this).removeClass("active");
@@ -57,10 +74,10 @@ $(document).ready(function() {
 
         // смещение блока, что бы он был по середине экрана
         var off_set = $target.outerHeight() / 2;
-
         $("body,html").animate({
-            scrollTop: $target.offset().top - (half_height - off_set)
-        }, 800);
+            scrollTop: $target.offset().top - (half_height - off_set),
+        }, 3000);
+        //Math.abs(window.scrollY - $(this.hash).offset().top) * 2.5)
     });
 
     // переход к старту при клике на индикатор
@@ -71,25 +88,20 @@ $(document).ready(function() {
 
         $('body,html').animate({
             scrollTop: $("#start-point").offset().top - (half_height - off_set)
-        }, 800);
+        }, 1500);
     });
 
     $(window).paroller();
-
-
-    //$(".bg-header").paroller({ factor: '-0.1', type: 'background', direction: 'vertical' });
-
-    // $('.bg-header').css({
-    //     '-webkit-transform': 'background-position: center -27px;',
-    //     '-moz-transform': 'background-position: center -27px;',
-    //     '-ms-transform': 'background-position: center 27px;',
-    //     '-o-transform': 'background-position: center -27px;',
-    //     'transform': 'background-position: center -27px;'
-    // });
-
-
 });
 
+function getActiveElement(element) {
+    if (element.hasClass("active")) {
+        return element;
+    } else {
+        return $(".menu > ul > li:last-child a");
+        //console.log(2);
+    }
+}
 //////////////////////////////
 //паралакс
 /////////////////////////////

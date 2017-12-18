@@ -76,6 +76,7 @@ p {
     text-align: center;
     font-size: 10px;
     height: 100%;
+    max-width: 1920px;
 }
 
 
@@ -104,7 +105,6 @@ p {
     width: 73%;
 }
 
-.start,
 .destination,
 .start-point {
     margin: 400px auto;
@@ -208,6 +208,7 @@ div.wrapper__item {
     color: #fff;
     border-bottom: 3px solid red;
     padding-bottom: 8px;
+    margin-left: -10px;
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
     -ms-transition: all 0.8s ease-in-out;
@@ -234,6 +235,7 @@ div.wrapper__item {
     text-transform: uppercase;
     text-align: center;
     /* padding: 0 10px; */
+    margin: 300px auto 400px;
 }
 
 .start__item {
@@ -520,6 +522,9 @@ img {
     height: 1134px;
     overflow: hidden;
     /* bottom: -50px; */
+    background: url("../img/bg_header.png") center / cover no-repeat;
+    height: 1134px;
+    width: 100%;
 }
 
 .header__item {

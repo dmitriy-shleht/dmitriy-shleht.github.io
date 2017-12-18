@@ -20,6 +20,10 @@
     .planet {
         margin-top: -256px;
     }
+    .sputnik {
+        top: 63%;
+        margin-left: -200px;
+    }
 }
 
 @media (max-width: 1127px) and (min-width: 340px) {

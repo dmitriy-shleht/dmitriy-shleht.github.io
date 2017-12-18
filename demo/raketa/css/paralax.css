@@ -51,8 +51,8 @@
 
 .tuman {
     width: 100%;
-    height: 1229px;
-    background: url("../img/tuman.png") center / cover no-repeat;
+    height: 1500px;
+    background: url("../img/tuman.png") center center no-repeat;
     position: absolute;
     top: 4%;
     left: 0%;
@@ -64,13 +64,14 @@
     background: url("../img/sputnik.png") center / cover no-repeat;
     position: absolute;
     top: 59%;
-    right: 10%;
+	left: 50%;
+	margin-left: -330px;
 }
-
+/* 
 .bg-header {
     background: url("../img/bg_header.png") center / cover no-repeat;
     height: 1134px;
     width: 100%;
     bottom: 0;
     position: absolute;
-}
+} */
