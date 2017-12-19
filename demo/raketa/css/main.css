@@ -24,7 +24,7 @@ body {
     height: 100%;
     background: #0e143e;
     color: #fff;
-    background: url("../img/bg.jpg") center / cover no-repeat;
+    /*background: url("../img/bg.jpg") center / cover no-repeat;*/
 }
 
 a {
@@ -77,6 +77,11 @@ p {
     font-size: 10px;
     height: 100%;
     max-width: 1920px;
+	-webkit-box-shadow: 0 0 44px 12px #020202;
+	-moz-box-shadow:    0 0 44px 12px #020202;
+	box-shadow: 0 0 44px 12px #020202;
+	background: url(../img/bg.jpg) center/cover no-repeat;
+	position: relative;
 }
 
 
@@ -206,7 +211,7 @@ div.wrapper__item {
 .menu a.active {
     font-family: 'RobotoBold';
     color: #fff;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #c01569;
     padding-bottom: 8px;
     margin-left: -10px;
     -webkit-transition: all 0.8s ease-in-out;
@@ -531,6 +536,11 @@ img {
     position: absolute;
     bottom: 10%;
     width: 100%;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
 }
 
 .header__title {

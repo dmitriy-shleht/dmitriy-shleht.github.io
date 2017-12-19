@@ -106,15 +106,15 @@ function getActiveElement(element) {
 //паралакс
 /////////////////////////////
 function parallaxScroll() {
-    var scrolled = $(window).scrollTop();
+    var scrolled = $(window).scrollTop(),
+        theDocHeight = $(document).height(), //max размер страницы
+        theWinHeight = $(window).height(); // высота экрана
 
-    // $('.planeta_top').css({
-    //     '-webkit-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
-    //     '-moz-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
-    //     '-ms-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
-    //     '-o-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
-    //     'transform': 'translateY(' + ((scrolled * .2)) + 'px)'
-    // });
+    var opacity = ((scrolled / (theDocHeight - theWinHeight)) * 1);
+
+    $('.planet').css({
+        'background-position': (scrolled * .1) + 'px ' + (scrolled * -.3) + 'px'
+    });
 
     $('.sputnik').css({
         '-webkit-transform': 'scale(' + (0.2 + (scrolled * .0002)) + ') translateY(' + ((scrolled * .2) - 300) + 'px)',
@@ -124,13 +124,17 @@ function parallaxScroll() {
         'transform': 'scale(' + (0.2 + (scrolled * .0002)) + ') translateY(' + ((scrolled * .2) - 300) + 'px)'
     });
 
-    // $('.tuman').css({
-    //     '-webkit-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
-    //     '-moz-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
-    //     '-ms-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
-    //     '-o-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
-    //     'transform': 'translateY(' + ((scrolled * .2)) + 'px)'
-    // });
+    $('.tuman').css({
+        '-webkit-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
+        '-moz-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
+        '-ms-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
+        '-o-transform': 'translateY(' + ((scrolled * .2)) + 'px)',
+        'transform': 'translateY(' + ((scrolled * .2)) + 'px)'
+    });
+
+    $('.header__item').css({
+        'opacity': Math.floor(opacity)
+    });
 
     // $('.bg').css({
     //     '-webkit-transform': 'translateY(' + ((scrolled * .1)) + 'px)',

@@ -47,6 +47,7 @@
     top: 0;
     right: 0;
     position: absolute;
+	will-change: transform;
 }
 
 .tuman {
@@ -54,8 +55,9 @@
     height: 1500px;
     background: url("../img/tuman.png") center center no-repeat;
     position: absolute;
-    top: 4%;
-    left: 0%;
+	top: 6%;
+	left: -131px;
+	will-change: transform;
 }
 
 .sputnik {
@@ -66,7 +68,9 @@
     top: 59%;
 	left: 50%;
 	margin-left: -330px;
+	will-change: transform;
 }
+
 /* 
 .bg-header {
     background: url("../img/bg_header.png") center / cover no-repeat;
