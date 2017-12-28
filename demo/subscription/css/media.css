@@ -1,0 +1,40 @@
+@media (max-width: 1400px) and (min-width: 340px) {
+    .sub-page {
+        padding: 20px 10px 0;
+        width: 100%;
+    }
+    .sub-page__item {
+        display: block;
+        margin: 0 auto;
+    }
+    .text {
+        margin: 60px auto 0;
+        text-align: center;
+    }
+    address {
+        text-align: center;
+    }
+    .form-wrap {
+        display: block;
+        width: 100%;
+        margin: 90px auto 0;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 860px) {
+    .sub-page__item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 860px) and (min-width: 340px) {
+    .sub-page__item {
+        width: 100%;
+    }
+    .form_input {
+        width: calc(92% - 20px);
+    }
+    #form h3 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'RobotoThin';
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    color: #fff;
+    max-width: 1920px;
+    background: url(../img/background.jpg) #0e143e top/cover no-repeat;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+
+/* -------------------------------------------------- */
+
+.sub-page {
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+}
+
+.sub-page__item {
+    display: inline-block;
+    width: 34%;
+    vertical-align: middle;
+    margin: 0 80px;
+}
+
+h2 {
+    font-family: "RobotoLight";
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-family: "RobotoLight";
+    margin: 10px 0;
+}
+
+.video-wrap {
+    padding-top: 80px;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    font-family: "RobotoThin";
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+address {
+    font-size: 2rem;
+    text-align: right;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.form-wrap {
+    margin: 120px auto 0;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 670px;
+}
+
+#form h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 4rem;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+#form {
+    font-size: 2rem;
+    padding: 28px;
+    text-align: center;
+}
+
+.form_input {
+    color: #fff;
+    padding: 8px 6px 8px 36px;
+    margin: 6px 0;
+    width: calc(70% - 20px);
+    font-family: 'RobotoThin';
+    font-style: italic;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+input[placeholder] {
+    color: #fff;
+}
+
+input::-moz-placeholder {
+    color: #fff;
+}
+
+input:-moz-placeholder {
+    color: #fff;
+}
+
+input:-ms-input-placeholder {
+    color: #fff;
+}
+
+.btn {
+    margin: 34px auto;
+    font-size: 1.8rem;
+    font-family: "RobotoLight";
+    text-align: center;
+    border: transparent;
+    border-radius: 30px;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, rgb(174, 56, 124), rgb(90, 5, 133));
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 197px;
+    height: 60px;
+    line-height: 60px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover:enabled {
+    font-family: "RobotoBold";
+    background: #b39cc0;
+    color: #480c63;
+}
+
+.btn:disabled {
+    font-family: "RobotoBold";
+    background: #b39cc0;
+    color: #480c63;
+}
