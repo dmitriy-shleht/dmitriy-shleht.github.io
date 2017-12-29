@@ -1,26 +1,21 @@
 @media (max-width: 1400px) and (min-width: 340px) {
     .sub-page {
         padding: 0 10px;
-        width: 100%;
+		display: block;
     }
 
-	.sub-text {
-		margin-bottom: 100px;
-	}
-
-	.up, .text {
+	.sub-header__item {
+		display: block;
 		width: 100%;
-		margin: 0 auto;
+		margin: 0 auto 80px;
+		text-align: center;
 	}
 
-    .sub-page__item {
+	.sub-page__item {
         display: block;
         margin: 0 auto;
     }
-    .text {
-        margin: 60px auto 0;
-        text-align: center;
-    }
+
     address {
         text-align: center;
     }

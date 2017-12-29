@@ -13,6 +13,6 @@ $(document).ready(function() {
         return false;
     });
 
-    $('.sub-text').addClass("animated fadeInDown");
+    $('.sub-header').addClass("animated fadeInDown");
     $('.sub-page__item').addClass("animated slideInLeft");
 });
