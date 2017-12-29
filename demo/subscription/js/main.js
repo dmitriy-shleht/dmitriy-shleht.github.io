@@ -12,13 +12,14 @@ $(document).ready(function() {
         });
         return false;
     });
-    $('.video-wrap, .form-wrap').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function() {
-            $(this).removeClass('animated fadeInDown');
+
+    $('.form-wrap, .text').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function () {
+            $(this).removeClass('animated fadeInUp');
         });
 
-    $('.text, .down').addClass('animated fadeInDownBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function() {
-            $(this).removeClass('animated fadeInDownBig');
+    $('.video-wrap, .up').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function () {
+            $(this).removeClass('animated fadeInDown');
         });
 });
