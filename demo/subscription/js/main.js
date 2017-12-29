@@ -12,4 +12,20 @@ $(document).ready(function() {
         });
         return false;
     });
+
+    $('.video-wrap').addClass('animated bounceInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function () {
+            $(this).removeClass('animated bounceInLeft');
+        });
+    $('.form-wrap').addClass('animated bounceInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function () {
+            $(this).removeClass('animated bounceInRight');
+        });
+    // $('.form-wrap').addClass('animated bounceInRight');
+
+
+    $('.text, .down').addClass('animated fadeInDownBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function () {
+            $(this).removeClass('animated fadeInDownBig');
+        });
 });
