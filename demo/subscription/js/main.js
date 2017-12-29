@@ -12,20 +12,13 @@ $(document).ready(function() {
         });
         return false;
     });
-
-    $('.video-wrap').addClass('animated bounceInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function () {
-            $(this).removeClass('animated bounceInLeft');
+    $('.video-wrap, .form-wrap').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function() {
+            $(this).removeClass('animated fadeInDown');
         });
-    $('.form-wrap').addClass('animated bounceInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function () {
-            $(this).removeClass('animated bounceInRight');
-        });
-    // $('.form-wrap').addClass('animated bounceInRight');
-
 
     $('.text, .down').addClass('animated fadeInDownBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function () {
+        function() {
             $(this).removeClass('animated fadeInDownBig');
         });
 });
