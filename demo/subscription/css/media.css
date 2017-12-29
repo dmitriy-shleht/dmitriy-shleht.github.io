@@ -2,6 +2,7 @@
     .sub-page {
         padding: 0 10px;
 		display: block;
+		margin-top: 0;
     }
 
 	.sub-header__item {

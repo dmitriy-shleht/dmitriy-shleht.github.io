@@ -68,6 +68,7 @@ p {
 
 .sub-page {
     margin: 0 auto;
+	margin-top: -106px;
     text-align: center;
     font-size: 10px;
 	display: flex;
