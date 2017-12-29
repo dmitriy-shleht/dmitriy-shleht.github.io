@@ -24,11 +24,6 @@ img {
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 8rem;
-    font-weight: normal;
-}
-
 h2 {
     font-size: 4rem;
     text-transform: uppercase;
@@ -50,6 +45,30 @@ p {
     width: 100%;
 }
 
+.sub-text {
+	margin-bottom: 140px;
+}
+
+.text {
+	font-family: "RobotoThin";
+	font-size: 2rem;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+address {
+	font-size: 2rem;
+	font-style: normal;
+	margin-bottom: 0;
+}
+
+.up, .text {
+	display: inline-block;
+	width: 34%;
+	vertical-align: middle;
+	margin: 0 80px;
+}
+
 .sub-page__item {
     display: inline-block;
     width: 34%;
@@ -66,10 +85,6 @@ h2 {
 p {
     font-family: "RobotoLight";
     margin: 10px 0;
-}
-
-.video-wrap {
-    padding-top: 80px;
 }
 
 .video-responsive {
@@ -89,22 +104,8 @@ p {
     height: 100%;
 }
 
-.text {
-    font-family: "RobotoThin";
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin: auto;
-}
-
-address {
-    font-size: 2rem;
-    text-align: right;
-    font-style: normal;
-    margin-bottom: 0;
-}
-
 .form-wrap {
-    margin: 120px auto 0;
+    margin: 60px auto 0;
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.1);
     max-width: 670px;

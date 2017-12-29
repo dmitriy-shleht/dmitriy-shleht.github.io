@@ -18,11 +18,11 @@ $(document).ready(function() {
         var animationFadeDown = 'animated fadeInDown';
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-        $('.form-wrap, .text').addClass(animationFadeUp).one(animationEnd, function () {
+        $('.sub-page__item').addClass(animationFadeUp).one(animationEnd, function () {
             $(this).removeClass(animationFadeUp);
         });
 
-        $('.video-wrap, .up').addClass(animationFadeDown).one(animationEnd, function () {
+        $('.sub-text').addClass(animationFadeDown).one(animationEnd, function () {
             $(this).removeClass(animationFadeDown);
         });
     });

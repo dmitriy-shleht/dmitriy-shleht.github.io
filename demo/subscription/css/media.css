@@ -1,8 +1,14 @@
 @media (max-width: 1400px) and (min-width: 340px) {
     .sub-page {
-        padding: 20px 10px 0;
+        padding: 0 10px;
         width: 100%;
     }
+
+	.up, .text {
+		width: 100%;
+		margin: 0 auto;
+	}
+
     .sub-page__item {
         display: block;
         margin: 0 auto;
@@ -17,7 +23,7 @@
     .form-wrap {
         display: block;
         width: 100%;
-        margin: 90px auto 0;
+        margin: 90px auto 20px;
     }
 }
 
