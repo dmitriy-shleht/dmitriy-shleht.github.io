@@ -13,17 +13,6 @@ $(document).ready(function() {
         return false;
     });
 
-    $(function () {
-        var animationFadeUp = 'animated fadeInUp';
-        var animationFadeDown = 'animated fadeInDown';
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-        $('.sub-page__item').addClass(animationFadeUp).one(animationEnd, function () {
-            $(this).removeClass(animationFadeUp);
-        });
-
-        $('.sub-text').addClass(animationFadeDown).one(animationEnd, function () {
-            $(this).removeClass(animationFadeDown);
-        });
-    });
+    $('.sub-text').addClass("animated fadeInDown");
+    $('.sub-page__item').addClass("animated slideInLeft");
 });
