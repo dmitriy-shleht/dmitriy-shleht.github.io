@@ -45,7 +45,7 @@ p {
 }
 
 .sub-text {
-	margin-bottom: 100px;
+	margin-bottom: 180px;
 }
 
 .text {
@@ -72,7 +72,7 @@ address {
     display: inline-block;
     width: 34%;
     vertical-align: middle;
-    margin: 0 80px;
+    margin: 100px 80px 140px;
 }
 
 h2 {
