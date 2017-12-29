@@ -13,13 +13,17 @@ $(document).ready(function() {
         return false;
     });
 
-    $('.form-wrap, .text').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function () {
-            $(this).removeClass('animated fadeInUp');
+    $(function () {
+        var animationFadeUp = 'animated fadeInUp';
+        var animationFadeDown = 'animated fadeInDown';
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+        $('.form-wrap, .text').addClass(animationFadeUp).one(animationEnd, function () {
+            $(this).removeClass(animationFadeUp);
         });
 
-    $('.video-wrap, .up').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function () {
-            $(this).removeClass('animated fadeInDown');
+        $('.video-wrap, .up').addClass(animationFadeDown).one(animationEnd, function () {
+            $(this).removeClass(animationFadeDown);
         });
+    });
 });
