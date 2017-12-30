@@ -1,4 +1,4 @@
-@media (max-width: 1320px) and (min-width: 1024px) {
+@media (max-width: 1320px) and (min-width: 1020px) {
     .sub-header__item {
         width: 48%;
     }
@@ -29,14 +29,14 @@
     }
 }
 
-@media (max-width: 1024px) and (min-width: 690px) {
+@media (max-width: 1020px) and (min-width: 690px) {
     .sub-page__item {
         width: 50%;
         margin: 0 auto;
     }
 }
 
-@media (max-width: 1024px) and (min-width: 690px) {
+@media (max-width: 1020px) and (min-width: 690px) {
     .sub-page__item {
         margin: 0 auto;
         width: 66%;
